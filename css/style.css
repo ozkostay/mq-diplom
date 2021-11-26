@@ -8,18 +8,17 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal
 }
-
 
 .header {
   text-align: center;
@@ -31,6 +30,7 @@
   color: white;
   position: relative;
   z-index: 0;
+  border: 1px solid;
 }
 
 .header::after {
@@ -42,12 +42,11 @@
   bottom: 0;
   left: 0;
   background-color: #000000;
-  /*background-size: cover;*/
   opacity: 0.6;
 }
 
 .wrapper, .wrapper-main-aside, .wrapper-bottom {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -99,7 +98,35 @@
   line-height: 75px;
   font-weight: 700;
   text-transform: uppercase;
+}
 
+.header-trends {
+  padding: 59px 0 1px 0;
+  
+}
+
+.header-headline {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  
+}
+
+.trends {
+  display: flex;
+}
+
+.trend-item {
+  width: 25%;
+}
+
+.trend-item-img {
+  width: 100%;
+}
+
+.trend-item:nth-child(n+2) {
+  margin-left: 3px;
 }
 
 .wrapper-main-aside {
@@ -108,7 +135,7 @@
 }
 
 .articles {
-  min-width: 800px;
+  min-width: 200px;
   max-width: 800px;
 }
 
@@ -177,7 +204,6 @@
   display: flex;
   margin-top: 29px;
   margin-bottom: 48px;
-
 }
 
 .article-date {
@@ -185,7 +211,6 @@
   font-weight: 400;
   color: #888;
   white-space: nowrap ;
-
 }
 
 .article-author {
@@ -193,7 +218,6 @@
   font-weight: 700;
   color: #000;
   margin-left: 15px;
-
 }
 
 .article-header-link, .article-author-link, .aside-headline-link, .aside-article-header-link {
@@ -220,7 +244,7 @@
   margin-bottom: 25px;
 }
 
-.aside-headline::after {
+.aside-headline::after, .header-headline::after {
   content: "";
   display: block;
   width: 66px;
@@ -235,7 +259,6 @@
   display: flex;
   margin-top: 18px;
   font-size: 14px;
-
 }
 
 .aside-article-img {
@@ -244,7 +267,6 @@
 
 .aside-article-content {
   margin-left: 15px;
-  /*padding-top: 1px;*/
 }
 
 .aside-article-header {
@@ -331,22 +353,19 @@
   color: #0f0d0e;
   text-decoration: none;
   text-align: center;
-
-  }
+}
 
   .section-topics {
     margin-bottom: 60px;
-  }
+}
 
   .topics-items {
     list-style-type: none;
-
-  }
+}
 
 .topics-item {
   display: flex;
   padding-bottom: 14px;
-
   flex-wrap: wrap;
 }
 
@@ -365,7 +384,6 @@
   font-size: 14px;
   font-weight: 700;
   color: #000000;
-
 }
 .topics-item-count {
   margin-left: 5px;
@@ -395,7 +413,6 @@
   padding-bottom: 20px;
   background-color: #f4f7f6;
 }
-
 
 .bottom-links-item a {
   display: block;
