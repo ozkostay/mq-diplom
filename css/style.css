@@ -45,7 +45,7 @@
   opacity: 0.6;
 }
 
-.wrapper, .wrapper-main-aside, .wrapper-bottom {
+.wrapper, .wrapper-main-aside, .wrapper-bottom, .wrapper-shop {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -312,7 +312,7 @@
   background-position: center center;
 }
 
-.aside-button-mailing{
+.aside-button-mailing {
   margin-top: 16px;
   display: block;
   border: none;
@@ -355,11 +355,11 @@
   text-align: center;
 }
 
-  .section-topics {
+.section-topics {
     margin-bottom: 60px;
 }
 
-  .topics-items {
+.topics-items {
     list-style-type: none;
 }
 
@@ -390,6 +390,10 @@
   font-size: 12px;
   font-weight: 700;
   color: #b59f5b;
+}
+
+.shop-item {
+
 }
 
 .wrapper-bottom {

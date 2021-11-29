@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans'
+}
+
+.aaa {
+  width: 1200px;
+  height: 100px;
+  background-color: rosybrown;
+  margin: 0 auto;
+}
+
+.shop-item {
+  width: 348px;
+  min-height: 440px;
+  position: relative;
+}
+
+.shop-item-content {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.shop-item-title {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+.shop-item-description {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #0f0d0e;
+}
+
+.shop-item-description-link {
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color: #b59f5b;
+}
+
+.shop-item-commerce {
+  display: flex;
+  margin-top: 24px;
+}
+.shop-item-commerce-price {
+  color: #0f0d0e;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shop-item-commerce-price-old {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.shop-item-commerce-price-new {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.shop-item-commerce-button {
+  width: 50%;
+}
+
+.aside-button-shop{
+  display: block;
+  border: none;
+  height: 48px;
+  width: 100%;
+  background-color: #b59f5b;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.shop-item-border {
+  border: 3px solid #b59f5b;
+  width: 348px;
+  height: 267px;
+  position: absolute;
+  bottom: 0px; /* Положение от нижнего края */
+  left: 0px;
+}
