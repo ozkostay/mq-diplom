@@ -1,3 +1,18 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +22,11 @@
 
 .aaa {
   width: 1200px;
-  height: 100px;
-  background-color: rosybrown;
+  /* height: 100px; */
+  /* background-color: rosybrown; */
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shop-item {
@@ -55,6 +72,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .shop-item-commerce-price-old {
@@ -62,12 +80,28 @@
   font-weight: 700;
   text-decoration: line-through;
   text-transform: uppercase;
+  position: relative;
+  align-self: flex-start;
 }
 
 .shop-item-commerce-price-new {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
+  align-self: flex-start;
+}
+
+.shop-item-commerce-price-old::after,
+.shop-item-commerce-price-new::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0.357em;
+  height: 0.107em;
+  top: 0.857em;
+  right: 0.142em;
+  background-color: #0f0d0e;
 }
 
 .shop-item-commerce-button {
@@ -93,4 +127,5 @@
   position: absolute;
   bottom: 0px; /* Положение от нижнего края */
   left: 0px;
+  /* display: none; */
 }
