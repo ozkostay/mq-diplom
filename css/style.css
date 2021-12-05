@@ -116,15 +116,6 @@
 
 }
 
-.trends {
-  display: flex;
-}
-
-.trend-item {
-  width: 25%;
-  height: 320px;
-}
-
 .trend-item-image-bg_1,
 .trend-item-image-bg_2,
 .trend-item-image-bg_3,
@@ -652,6 +643,16 @@
 }
 
 @media (min-width: 1201px) {
+  .trends {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .trend-item {
+    width: 25%;
+    height: 320px;
+  }
+
   .trend-item:nth-child(n+2) {
     margin-left: 3px;
   }
