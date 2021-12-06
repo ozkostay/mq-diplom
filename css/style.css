@@ -5,7 +5,6 @@
   font-family: 'Open Sans'
 }
 
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Regular.woff");
@@ -299,7 +298,7 @@
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin: 35px 0 25px 0;
 }
 
 .aside-headline::after,
@@ -335,6 +334,7 @@
 .aside-article-find {
   margin-top: 58px;
 }
+
 .aside-form {
   margin-bottom: 55px;
 }
@@ -443,6 +443,7 @@
   font-weight: 700;
   color: #000000;
 }
+
 .topics-item-count {
   margin-left: 5px;
   font-size: 12px;
@@ -517,6 +518,7 @@
   display: flex;
   margin-top: 24px;
 }
+
 .shop-item-commerce-price {
   color: #0f0d0e;
   width: 50%;
@@ -640,10 +642,124 @@
   display: none;
 }
 
+._hidden {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  font-size: 14px;
+  width: 390px;
+  height: 650px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+
+
+.popup-close {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.popup-headline {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 54px;
+  color: #000000
+}
+
+.popup-headline::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: #b59f5b;
+}
+
+.select-label,
+.radio-label,
+.field-label {
+  display: block;
+  margin: 35px 30px 10px 30px;
+  font-weight: 400;
+}
+
+.select {
+  display: inline-block;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: calc(100% - 60px);
+  height: 57px;
+  padding: 20px;
+  margin: 0 30px 0 30px;
+  border: 1px solid #cbd1d4;
+  background-color: #f9f9f9;
+  color: #333333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+.radio {
+  margin: 10px 30px 0 30px;
+  display: flex;
+}
+
+.radio p {
+  margin: 0 30px 0 0;
+}
+
+.textarea {
+  min-width: 328px;
+  max-width: 328px;
+  min-height: 130px;
+  max-height: 130px;
+  margin: 10px 30px 0 30px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.popup-button {
+  margin: 27px 30px 0 30px;
+  display: block;
+  border: none;
+  height: 50px;
+  width: calc(100% - 60px);
+  background-color: #b59f5b;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 @media (min-width: 1201px) {
+
   .trends {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 29px;
   }
 
   .trend-item {
@@ -665,7 +781,8 @@
   }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1200px)
+and (orientation: landscape) {
 
   .header {
     background-image: url("../images/banner-bg-tablet.jpg");
@@ -678,7 +795,7 @@
     margin-left: 35px;
     margin-right: 35px;
   }
-  
+
   .wrapper-shop-items {
     margin: 0;
   }
@@ -693,13 +810,17 @@
 
   .p-header {
     display: block;
-    max-width: 605px;
+    max-width: 611px;
     padding-top: 104px;
     padding-bottom: 124px;
     margin-left: auto;
     margin-right: auto;
     font-size: 40px;
     line-height: 55px;
+  }
+
+  .header-headline {
+    font-size: 18px;
   }
 
   .trends {
@@ -710,16 +831,19 @@
   .trend-item {
     width: 25%;
     height: 320px;
+    margin-bottom: 3px;
   }
 
   .trend-item:nth-child(n+2) {
     margin-left: 3px;
   }
 
-  .trend-item-description,
-  .article-header {
+  .trend-menu-link {
+    font-size: 14px;
+  }
+
+  .trend-header-link {
     font-size: 17px;
-    line-height: 22px;
   }
 
   .article {
@@ -746,12 +870,34 @@
     margin-top: 14px;
   }
 
+  .article-header-link {
+    font-size: 17px;
+  }
+
+  .article-menu-link {
+    font-size: 14px;
+  }
+
   .article-date-author {
-    margin-top: 38px;
-    margin-bottom: 38px;
-  } 
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .aside {
+    margin-left: 35px;
+  }
+
+  .aside-article-header-link {
+    font-size: 14px;
+    line-height: 12px;
+  }
+
   .shop-item {
     height: 86.4%;
+  }
+
+  .shop-item-title {
+    font-size: 17px;
   }
 
   .shop-item-img-tab {
@@ -764,7 +910,9 @@
   }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1200px)
+and (orientation: portrait) {
+
   .header {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
@@ -791,7 +939,7 @@
 
   .p-header {
     display: block;
-    max-width: 605px;
+    max-width: 611px;
     padding-top: 104px;
     padding-bottom: 124px;
     margin-left: auto;
@@ -800,6 +948,9 @@
     line-height: 55px;
   }
 
+  .header-headline {
+    font-size: 18px;
+  }
   .trends {
     display: flex;
     flex-wrap: wrap;
@@ -815,6 +966,14 @@
     margin-left: 3px;
   }
 
+  .trend-menu-link {
+    font-size: 14px;
+  }
+
+  .trend-header-link {
+    font-size: 17px;
+  }
+
   .article {
     display: block;
     border-bottom: 4px solid #eeeeee;
@@ -839,12 +998,34 @@
     margin-top: 14px;
   }
 
+  .article-header-link {
+    font-size: 17px;
+  }
+
+  .article-menu-link {
+    font-size: 14px;
+  }
+
   .article-date-author {
-    margin-top: 38px;
-    margin-bottom: 38px;
-  } 
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .aside {
+    margin-left: 35px;
+  }
+
+  .aside-article-header-link {
+    font-size: 14px;
+    line-height: 12px;
+  }
+
   .shop-item {
     height: 86.4%;
+  }
+
+  .shop-item-title {
+    font-size: 17px;
   }
 
   .shop-item-img-tab {
@@ -1012,7 +1193,7 @@
   .aside-article-header-link {
     font-size: 0.875rem;
   }
-  
+
   .article-author-link {
     font-size: 0.75rem;
   }
@@ -1068,8 +1249,7 @@
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-  /* 
-   */
+
   .header {
     background-image: url("../images/banner-mobile.jpg");
     height: 100vh;
@@ -1134,12 +1314,12 @@
   .header-trends {
     padding: 40px 0 1px 0;
   }
-  
+
   .trends {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .trend-item {
     width: calc((100% - 3px)/2);
     height: 320px;
@@ -1265,8 +1445,7 @@
 
   .shop-item {
     width: 70%;
-    /* max-height: 317px;*/
-    min-height: 97vw; 
+    min-height: 97vw;
     padding: 0;
     margin: 0 auto 24px auto;
   }
@@ -1284,5 +1463,5 @@
  .shop-item-border {
     padding: 54px 20px 24px 20px;
  }
-
 }
+
