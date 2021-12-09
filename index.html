@@ -622,7 +622,7 @@
   <div class="_hidden">
     <div class="popup">
       <button class="popup-close">
-        X
+        <img src="svg/form-x.svg" alt="Закрыть">
       </button>
       <p class="popup-headline">Ваш фидбек</p>
       <form class="popup-form" action="#0">
@@ -637,8 +637,14 @@
         <div class="radio-group">
           <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
           <div class="radio">
-            <label class="radio_label"><input name="q-email" type="radio" value="yes"> Да</label>
-            <label class="radio_label"><input name="q-email" type="radio" value="no" checked> Нет</label>
+            <label class="radio_label">
+              <input class="padio-button" name="q-email" type="radio" value="yes">
+              <span class="radio-span">Да</span>
+            </label>
+            <label class="radio_label">
+              <input class="padio-button" name="q-email" type="radio" value="no" checked>
+              <span class="radio-span">Нет</span>
+            </label>
           </div>
         </div>
         <label class="field-group">

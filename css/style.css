@@ -649,7 +649,7 @@
   border: 1px solid;
   top: 0;
   background-color: rgba(0,0,0,0.6);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -665,15 +665,15 @@
 
 
 .popup-close {
-  width: 20px;
-  height: 20px;
-  border: 1px solid;
+  width: 22px;
+  height: 22px;
+  /* border: 1px solid; */
   background-color: rgba(0,0,0,0);
   position: absolute;
   top: -30px;
   right: 0;
-  color: #ffffff;
-  font-weight: 700;
+  /* color: #ffffff; */
+  /* font-weight: 700; */
 }
 
 .popup-headline {
@@ -729,6 +729,30 @@
 
 .radio_label {
   margin: 0 30px 0 0;
+}
+
+.radio-span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  vertical-align: middle;
+  margin-right: 12px ;
+}
+
+.padio-button:checked ~ .radio-span::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.padio-button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .textarea {
