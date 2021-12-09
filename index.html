@@ -45,8 +45,8 @@
   <div class="header-trends">
     <h2 class="header-headline"><a class="aside-headline-link" href="#0">Сейчас в тренде</a></h2>
   </div>
-  <section class="trends">
-    <article class="trend-item">
+  <div class="trends">
+    <div class="trend-item">
       <div class="trend-item-image-bg_1">
         <div class="trend-item-content">
           <div class="trend-tags">
@@ -61,8 +61,8 @@
           </p>
         </div>
       </div>
-    </article>
-    <article class="trend-item">
+    </div>
+    <div class="trend-item">
       <div class="trend-item-image-bg_2">
         <div class="trend-item-content">
           <div class="trend-tags">
@@ -76,8 +76,8 @@
           </p>
         </div>
       </div>
-    </article>
-    <article class="trend-item">
+    </div>
+    <div class="trend-item">
       <div class="trend-item-image-bg_3">
         <div class="trend-item-content">
           <div class="trend-tags">
@@ -91,8 +91,8 @@
           </p>
         </div>
       </div>
-    </article>
-    <article class="trend-item">
+    </div>
+    <div class="trend-item">
       <div class="trend-item-image-bg_4">
         <div class="trend-item-content">
           <div class="trend-tags">
@@ -106,8 +106,8 @@
           </p>
         </div>
       </div>
-    </article>
-  </section>
+    </div>
+  </div>
   <!-- =============== Main Aside ================================== -->
   <div class="wrapper-main-aside">
     <main class="articles">
@@ -491,9 +491,9 @@
     <div class="shop-header">
       <h2 class="header-headline"><a class="aside-headline-link" href="#0">Наши изделия</a></h2>
     </div>
-    <section class="wrapper-shop-items">
+    <div class="wrapper-shop-items">
       <!-- 1 Shop-Item beginning -->
-      <article class="shop-item">
+      <div class="shop-item">
         <img src="images/shop-item-desk1.jpg" alt="товар 1" class="shop-item-img">
         <img src="images/shop-item-tablet1.jpg" alt="товар 1" class="shop-item-img-tab">
         <img src="images/shop-item-mobile1.jpg" alt="товар 1" class="shop-item-img-mobile">
@@ -520,10 +520,10 @@
             </div>
           </div>
         </div>
-      </article>
+      </div>
       <!-- Shop-Item end -->
       <!-- 2 Shop-Item beginning -->
-      <article class="shop-item">
+      <div class="shop-item">
         <img src="images/shop-item-desk2.jpg" alt="товар 2" class="shop-item-img">
         <img src="images/shop-item-tablet2.jpg" alt="товар 2" class="shop-item-img-tab">
         <img src="images/shop-item-mobile2.jpg" alt="товар 2" class="shop-item-img-mobile">
@@ -549,10 +549,10 @@
             </div>
           </div>
         </div>
-      </article>
+      </div>
       <!-- Shop-Item end -->
       <!-- 3 Shop-Item beginning -->
-      <article class="shop-item">
+      <div class="shop-item">
         <img src="images/shop-item-desk3.jpg" alt="товар 3" class="shop-item-img">
         <img src="images/shop-item-tablet3.jpg" alt="товар 3" class="shop-item-img-tab">
         <img src="images/shop-item-mobile3.jpg" alt="товар 3" class="shop-item-img-mobile">
@@ -581,9 +581,9 @@
             </div>
           </div>
         </div>
-      </article>
+      </div>
       <!-- Shop-Item end -->
-    </section>
+    </div>
   </div>
   <!-- =============== Footer ================================== -->
   <footer>
@@ -636,12 +636,12 @@
             <option value="oneyear">Не чаще раза в год</option>
           </select>
         </label>
-        <label class="radio-group"></label>
-        <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
-        <div class="radio">
-          <p><input name="q-email" type="radio" value="yes"> Да</p>
-          <p><input name="q-email" type="radio" value="no" checked> Нет</p>
-        </div>
+        <label class="radio-group">
+          <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
+          <div class="radio">
+            <p><input name="q-email" type="radio" value="yes"> Да</p>
+            <p><input name="q-email" type="radio" value="no" checked> Нет</p>
+          </div>
         </label>
         <label class="field-group">
           <span class="field-label">Расскажите, какой контент вы хотели бы видеть
