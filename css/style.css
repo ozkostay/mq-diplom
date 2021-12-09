@@ -721,7 +721,7 @@
 
 .radio {
   margin: 10px 30px 0 30px;
-  display: flex;
+  display: none;
 }
 
 .radio_label {
