@@ -110,7 +110,7 @@
   </div>
   <!-- =============== Main Aside ================================== -->
   <div class="wrapper-main-aside">
-    <main class="articles"> 
+    <main class="articles">
       <!-- =============== begin of article 1 ================================== -->
       <article class="article">
         <img class="article-img" src="images/last-post1.jpg" alt="Новость">
@@ -492,11 +492,11 @@
     <div class="wrapper-shop-items">
       <!-- 1 Shop-Item beginning -->
       <div class="shop-item">
-        <picture class="shop-item-img">
+        <picture>
           <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
-          <img src="images/shop-item-desk1.jpg" alt="товар 1" style="width:auto;">
-        </picture> 
+          <img src="images/shop-item-desk1.jpg" alt="товар 1" class="shop-item-img">
+        </picture>
         <div class="shop-item-border">
           <p class="shop-item-title">Подушки на диван</p>
           <p class="shop-item-description">
@@ -524,12 +524,11 @@
       <!-- Shop-Item end -->
       <!-- 2 Shop-Item beginning -->
       <div class="shop-item">
-        
-        <picture class="shop-item-img">
+        <picture>
           <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
-          <img src="images/shop-item-desk2.jpg" alt="товар 2" style="width:auto;">
-        </picture> 
+          <img src="images/shop-item-desk2.jpg" alt="товар 2" class="shop-item-img">
+        </picture>
         <div class="shop-item-border">
           <p class="shop-item-title">Кукла «Зайчик»</p>
           <p class="shop-item-description">
@@ -556,12 +555,11 @@
       <!-- Shop-Item end -->
       <!-- 3 Shop-Item beginning -->
       <div class="shop-item">
-        
-        <picture class="shop-item-img">
+        <picture>
           <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
-          <img src="images/shop-item-desk3.jpg" alt="товар 3" style="width:auto;">
-        </picture> 
+          <img src="images/shop-item-desk3.jpg" alt="товар 3" class="shop-item-img">
+        </picture>
         <div class="shop-item-border">
           <p class="shop-item-title">Шестиугольная рамка</p>
           <p class="shop-item-description">
@@ -627,10 +625,10 @@
     </div>
   </footer>
 
-  <div class="_hidden">
+  <div class="popupback _hidden">
     <div class="popup">
       <button class="popup-close">
-        <img src="svg/form-x.svg" alt="Закрыть">
+        <!-- <img src="svg/form-x.svg" alt="Закрыть"> -->
       </button>
       <p class="popup-headline">Ваш фидбек</p>
       <form class="popup-form" action="#0">
@@ -661,12 +659,12 @@
           </span>
           <textarea class="textarea" placeholder="Может больше рецептов?" required></textarea>
         </label>
-        <label class="button-group">
+        <button class="popup-button" type="submit">
           <span class="screen-reader">
             Кнопка для отправки информации
           </span>
-          <button class="popup-button" type="submit">Отправить</button>
-        </label>
+          Отправить
+        </button>
       </form>
     </div>
   </div>
